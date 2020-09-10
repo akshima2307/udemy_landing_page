@@ -7,9 +7,15 @@
 
 body{
   font-family: 'Source Sans Pro', sans-serif;
+  box-sizing: border-box;
 }
 html{
   font-size: 62.5%;
+}
+@media(max-width: 1056px){
+  html{
+    font-size: 54.5%;
+  }
 }
 
 .nav-big{
@@ -34,24 +40,26 @@ html{
     padding-left: 2rem;
     border-radius: 50px;
   }
-  &__Login-btn{
-    width: 10rem;
-    height: 4rem;
-    background-color: white;
-    color: #0F7C90;
-    border: 1px solid #3C3B37;
-    border-radius: 5px;
-  }
-  &__Signup-btn{
-    width: 10rem;
-    height: 4rem;
-    background-color: #0F7C90;
-    color: white;
-    border: none;
-    border-radius: 5px;
+  &__btn{
+    &-login{
+      width: 10rem;
+      height: 4rem;
+      background-color: white;
+      color: #0F7C90;
+      border: 1px solid #3C3B37;
+      border-radius: 5px;
+    }
+    &-signup{
+      width: 10rem;
+      height: 4rem;
+      background-color: #0F7C90;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-left: 2rem;
+    }
   }
 }
-
 .nav-small{
   display: flex;
   justify-content:space-between;
