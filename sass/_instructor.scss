@@ -1,15 +1,33 @@
 .instructor{
-
   &__container{
     margin: 0 20rem;
     display: flex;
     justify-content: space-between;
+    @media(max-width: 1200px){
+      margin: 0 10rem;
+    }
+    @media(max-width: 650px){
+      margin: 0 2rem;
+    }
+    @media(max-width: 500px){
+      flex-direction: column;
+      align-items: center;
+    }
     & > img {
-
+      @media(max-width: 1200px){
+        width: 40%;
+        object-fit: cover;
+      }
+      @media(max-width: 500px){
+        margin-bottom: 3rem;
+      }
     }
     &__content{
       width: 50%;
       text-align: center;
+      @media(max-width: 500px){
+        width: 80%;
+      }
       & > h1{
         font-size: 4rem;
         color: #3C3B37;

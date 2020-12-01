@@ -44,6 +44,7 @@
     margin: 0;
     &__img{
       width: 100%;
+      object-fit: cover;
     }
   }
 }
@@ -67,10 +68,16 @@
     font-size: 3.2rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    @media(max-width: 500px){
+      font-size: 1.8rem;
+    }
   }
   & > p {
     font-size: 1.7rem;
     margin-bottom: 1.5rem;
+    @media(max-width: 500px){
+      font-size: 1.2rem;
+    }
   }
   & > button {
     background-color: #6e1a52;
@@ -78,6 +85,9 @@
     padding: 1.5rem 3rem;
     border: 1.5px solid white;
     border-radius: 5px;
+    @media(max-width: 500px){
+      padding: 1rem 2rem;
+    }
     &:hover{
       cursor: pointer;
     }

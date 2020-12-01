@@ -5,7 +5,17 @@
   &__column{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    & > div:not(:last-child){
+      margin-right: 3rem;
+    }
+    &-1{
+      align-items: flex-start;
+    }
+    &-2{
+      align-items: center;
+    }
+    
     &:not(:last-child){
       margin-bottom: 2rem;
     }

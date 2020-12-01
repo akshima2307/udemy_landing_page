@@ -2,6 +2,14 @@
   margin-top: 5rem;
   & > .container{
     margin: 0 10rem;
+    @media(max-width: 1520px){
+      .categories > .container{
+        margin: 0 3rem;
+      }
+    }
+    @media(max-width: 800px){
+      margin: 0 2rem;
+    }
     & > h1 {
       font-size: 2.4rem;
       font-weight: 900;
@@ -23,8 +31,17 @@
   justify-content: flex-start;
   margin-bottom: 3rem;
   border-bottom: 1px solid #3C3B37;
+  @media(max-width: 550px){
+    flex-wrap: wrap;
+    border-bottom: none;
+  }
   & > div {
     padding-bottom: 2rem;
+    @media (max-width: 550px){
+      padding-bottom: 0;
+      padding: 1rem;
+      border-radius: 16px;
+    }
   }
 }
 
@@ -35,12 +52,18 @@
   font-size: 1.8rem;
   font-weight: 600;
   color: #3C3B37;
+  @media(max-width: 800px){
+    font-size: 1.4rem;
+  }
   &:not(:last-child){
     margin-right: 4rem;
+    @media(max-width: 800px){
+      margin-right: 2rem;
+    }
   }
 }
 .tab-content {
-  height: 20rem;
+  height: max-content;
   padding: 3rem;
   background-color: #fff7f0;
   color: #3C3B37;
@@ -49,8 +72,25 @@
 .content{
   display: flex;
   justify-content: space-between;
+  @media(max-width: 550px){
+    flex-direction: column;
+    align-items: center;
+  }
+  & > img {
+    @media(max-width: 800px){
+      height: 20rem;
+    }
+  }
   &__text{
     width: 60%;
+    @media(max-width: 800px){
+      width: 50%;
+    }
+    @media(max-width: 550px){
+      width: 80%;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
     & > h1{
       font-size: 2rem;
       margin-bottom: 1.5rem;
@@ -86,10 +126,9 @@
 }
 .border{
   border-bottom: 1.6px solid #000;
-}
-
-@media(max-width: 1520px){
-  .categories > .container{
-    margin: 0 3rem;
+  @media (max-width: 550px){
+    border-bottom: none;
+    border: 1.6px solid #3d3d3d;
   }
 }
+

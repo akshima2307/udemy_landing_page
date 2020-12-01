@@ -12,9 +12,19 @@ body{
 html{
   font-size: 62.5%;
 }
-@media(max-width: 1056px){
+@media(max-width: 1200px){
   html{
-    font-size: 54.5%;
+    font-size: 56.5%;
+  }
+}
+@media(max-width:900px){
+  html{
+    font-size: 54%;
+  }
+}
+@media(min-width:1800px){
+  html{
+    font-size: 75%;
   }
 }
 
