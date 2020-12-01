@@ -11,6 +11,9 @@
     @media(max-width: 1200px){
       margin: 0 2rem;
     }
+    @media(max-width: 830px){
+      border-bottom: none;
+    }
     & > h1{
       font-size: 3rem;
       color: #3C3B37;

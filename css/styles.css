@@ -98,8 +98,12 @@ html {
     top: 6.4rem;
     left: 4.8rem;
     width: 40rem;
-    height: 24rem;
+    height: max-content;
     padding: 2rem; }
+    @media (max-width: 500px) {
+      .header__content {
+        left: 0;
+        width: 30rem; } }
     .header__content > h1 {
       font-weight: 900;
       font-size: 4rem;
@@ -418,6 +422,9 @@ html {
     @media (max-width: 1200px) {
       .info__1 {
         margin: 0 2rem; } }
+    @media (max-width: 830px) {
+      .info__1 {
+        border-bottom: none; } }
     .info__1 > h1 {
       font-size: 3rem;
       color: #3C3B37;
